@@ -11,6 +11,7 @@ python3 -m pip install --upgrade pwntools
 # download rust 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
+source ~/.bashrc
 
 # download pwninit
 cargo install pwninit
