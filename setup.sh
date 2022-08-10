@@ -11,6 +11,7 @@ python3 -m pip install --upgrade pwntools
 # download rust 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
+source "$HOME/.cargo/env"
 source ~/.bashrc
 
 # download pwninit
@@ -27,10 +28,10 @@ git clone https://github.com/scwuaptx/Pwngdb.git
 cp ~/Pwngdb/.gdbinit ~/
 
 # copy vimrc
-cp ./.vimrc ~/
+mv ./vimrc ~/.vimrc
 
 # tmux conf
-cp ./.tmux.conf ~/
+mv ./tmux.conf ~/.tmux.conf
 
 # one_gadget
 sudo gem install one_gadget
