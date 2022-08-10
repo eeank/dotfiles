@@ -1,6 +1,6 @@
 sudo apt-get -y update
 # essentials
-sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential openssl liblzma-dev pkg-config ruby-dev patchelf tmux vim curl
+sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential openssl liblzma-dev pkg-config ruby-dev patchelf tmux vim curl gdb
 export PATH:~/.local/bin/:$PATH
 
 
@@ -28,10 +28,10 @@ git clone https://github.com/scwuaptx/Pwngdb.git
 cp ~/Pwngdb/.gdbinit ~/
 
 # copy vimrc
-mv ./vimrc ~/.vimrc
+cp ~/dotfiles/vimrc ~/.vimrc
 
 # tmux conf
-mv ./tmux.conf ~/.tmux.conf
+cp ~/dotfiles/tmux.conf ~/.tmux.conf
 
 # one_gadget
 sudo gem install one_gadget
