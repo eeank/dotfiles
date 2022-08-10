@@ -8,7 +8,7 @@ context.terminal = ["tmux", "splitw", "-h"]
 p = process({proc_args})
 
 def choice(c):
-    p.sendlineafter("", str(c))
+	p.sendlineafter("", str(c))
 
 
 gdb.attach(p)
