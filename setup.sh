@@ -7,8 +7,11 @@ cp ~/dotfiles/vimrc ~/.vimrc
 cp ~/dotfiles/tmux.conf ~/.tmux.conf
 
 # essentials
-sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential openssl liblzma-dev pkg-config ruby-dev patchelf tmux vim curl gdb elfutils
-export PATH:~/.local/bin/:$PATH
+sudo apt-get -y zsh install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential openssl liblzma-dev pkg-config ruby-dev patchelf tmux vim curl gdb elfutils
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "export PATH:~/.local/bin/:$PATH" >> ~/.bashrc
 
 
 # install pwntools
@@ -19,7 +22,6 @@ python3 -m pip install --upgrade pwntools
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
 source "$HOME/.cargo/env"
-source ~/.bashrc
 
 # download pwninit
 cargo install pwninit
