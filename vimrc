@@ -15,12 +15,9 @@ if &term =~ "screen"
     exec "set t_PS=\e[200~"                                              
     exec "set t_PE=\e[201~"                                              
 endif
-<<<<<<< HEAD
 
 nnoremap zz :w<cr>
 nnoremap zx :wq<cr>
 command! W write
 command! Q quit
 
-=======
->>>>>>> 311560cb63419320fe123c43a15a3f7f853215c3
