@@ -9,11 +9,6 @@ cp ~/dotfiles/tmux.conf ~/.tmux.conf
 # essentials
 sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential openssl liblzma-dev pkg-config ruby-dev patchelf tmux vim curl gdb elfutils
 
-
-sudo apt-get -y install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential openssl liblzma-dev pkg-config ruby-dev patchelf tmux vim curl gdb elfutils
-echo "export PATH:~/.local/bin/:$PATH" >> ~/.bashrc
-
-
 # install pwntools
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
