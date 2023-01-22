@@ -18,10 +18,6 @@ echo "export PATH:~/.local/bin/:$PATH" >> ~/.bashrc
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
 
-# download rust 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
-source "$HOME/.cargo/env"
 # download rust, since it's only for pwninit I don't think it's needed for now.. <- I was wrong.. I do need pwninit for setup
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
@@ -46,6 +42,8 @@ fi
 
 # one_gadget
 sudo gem install one_gadget
+
+export PATH:~/.local/bin/:$PATH
 
 # reload settings
 source ~/.bashrc
